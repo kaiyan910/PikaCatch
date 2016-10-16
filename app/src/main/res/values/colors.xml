@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2874BC</color>
+    <color name="colorPrimaryDark">#023277</color>
+    <color name="colorAccent">#E11F20</color>
+
+    <color name="colorExtra">#FBCD03</color>
+    <color name="colorExtra2">#FFFFFF</color>
+
+    <color name="colorAccent_pressed">#ff5891</color>
+    <color name="colorPrimaryDark_pressed">#3f4da4</color>
+
+    <color name="half_black">#808080</color>
+    <color name="white">#fafafa</color>
+    <color name="white_pressed">#f1f1f1</color>
+    <color name="caption">#dddddd</color>
+
+    <color name="background">#e9e9e9</color>
+    <color name="background.log">#AA000000</color>
+
+    <color name="row.odd">#FFFFFF</color>
+    <color name="row.even">#fafafa</color>
+
+    <color name="primaryText">#57000000</color>
+    <color name="secondaryText">#36000000</color>
+    <color name="hintText">#26000000</color>
+    <color name="divider">#0C000000</color>
+</resources>

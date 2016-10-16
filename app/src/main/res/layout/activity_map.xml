@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/map_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.crookk.pikaplus.local.ui.view.LogView_
+        android:id="@+id/log_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/logView.item.height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/background.log" />
+
+    <ImageView
+        android:id="@+id/pokeball"
+        android:layout_width="@dimen/map.pokeBall.size"
+        android:layout_height="@dimen/map.pokeBall.size"
+        android:layout_margin="@dimen/map.pokeBall.margin"
+        android:src="@drawable/ic_pokeball"
+        android:visibility="gone" />
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/multiple_actions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="@dimen/map.action.margin"
+        android:layout_marginEnd="@dimen/map.action.margin"
+        fab:fab_addButtonColorNormal="@color/colorAccent"
+        fab:fab_addButtonColorPressed="@color/colorAccent_pressed"
+        fab:fab_addButtonPlusIconColor="@color/white">
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/log"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="@color/colorPrimaryDark"
+            fab:fab_colorPressed="@color/colorPrimaryDark_pressed"
+            fab:fab_icon="@drawable/ic_log"
+            fab:fab_size="mini" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="@color/colorPrimaryDark"
+            fab:fab_colorPressed="@color/colorPrimaryDark_pressed"
+            fab:fab_icon="@drawable/ic_account"
+            fab:fab_size="mini" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="@color/colorPrimaryDark"
+            fab:fab_colorPressed="@color/colorPrimaryDark_pressed"
+            fab:fab_icon="@drawable/ic_share"
+            fab:fab_size="mini" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="@color/colorPrimaryDark"
+            fab:fab_colorPressed="@color/colorPrimaryDark_pressed"
+            fab:fab_icon="@drawable/ic_service"
+            fab:fab_size="mini" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="@color/colorPrimaryDark"
+            fab:fab_colorPressed="@color/colorPrimaryDark_pressed"
+            fab:fab_icon="@drawable/ic_filter"
+            fab:fab_size="mini" />
+
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/check_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="@color/colorPrimaryDark"
+            fab:fab_colorPressed="@color/colorPrimaryDark_pressed"
+            fab:fab_icon="@drawable/ic_check_iv"
+            fab:fab_size="mini" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="@color/colorPrimaryDark"
+            fab:fab_colorPressed="@color/colorPrimaryDark_pressed"
+            fab:fab_icon="@drawable/ic_radar"
+            fab:fab_size="mini" />
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+</RelativeLayout>

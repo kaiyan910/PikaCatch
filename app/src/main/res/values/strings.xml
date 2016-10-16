@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PikaCatch+</string>
+
+    <string name="bye">Bye!</string>
+
+    <string name="menu.account.add">Add</string>
+
+    <string name="list.empty">No data is found</string>
+
+    <string name="service.found">%1$s is found! (%2$s)</string>
+    <string name="service.location">Location: %1$f, %2$f</string>
+
+    <string name="map.window.iv">%.2f%%</string>
+
+    <string name="map.service.on">Enable Background Service</string>
+    <string name="map.service.off">Disable Background Service</string>
+
+    <string name="map.iv.checking">Checking</string>
+
+    <string name="account.title">Account</string>
+    <string name="account.hint.username">Username</string>
+    <string name="account.hint.password">Password</string>
+    <string name="account.dialog.positive">Create</string>
+    <string name="account.dialog.negative">Cancel</string>
+    <string name="account.dialog.delete">Delete</string>
+
+    <string name="account.holder.delete.message">Are you going to remove: %s ?</string>
+    <string name="account.holder.delete.yes">YES</string>
+    <string name="account.holder.delete.no">NO</string>
+
+    <string name="pokemon.title">Manage Pokemon</string>
+</resources>

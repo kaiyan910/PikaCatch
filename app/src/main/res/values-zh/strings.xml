@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PikaCatch+</string>
+
+    <string name="bye">再見!</string>
+
+    <string name="menu.account.add">增加</string>
+
+    <string name="list.empty">未有任何數據</string>
+
+    <string name="service.found">找到了 %1$s (%2$s)</string>
+    <string name="service.location">地點: %1$f, %2$f</string>
+
+    <string name="map.window.iv">%.2f%%</string>
+    <string name="map.service.on">開啟背景服務</string>
+    <string name="map.service.off">關閉背景服務</string>
+    <string name="map.iv.checking">計算中</string>
+
+    <string name="account.title">帳號管理</string>
+    <string name="account.hint.username">帳號</string>
+    <string name="account.hint.password">密碼</string>
+    <string name="account.dialog.positive">創建</string>
+    <string name="account.dialog.negative">取消</string>
+    <string name="account.dialog.delete">移除</string>
+
+    <string name="account.holder.delete.message">要移除帳戶: %s ?</string>
+    <string name="account.holder.delete.yes">確定</string>
+    <string name="account.holder.delete.no">取消</string>
+
+    <string name="pokemon.title">小精靈管理</string>
+</resources>
