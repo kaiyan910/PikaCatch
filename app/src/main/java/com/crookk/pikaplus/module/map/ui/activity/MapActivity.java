@@ -424,7 +424,7 @@ public class MapActivity extends BaseActivity implements MapView,
         if (mLastRequestFinished && mRunning) {
             showPokeBall(true);
             mLastRequestFinished = false;
-            mMapPresenter.fetchPokemonFromServer();
+            mMapPresenter.fetchPokemonFromServer(mGoogleMap.getProjection().getVisibleRegion().latLngBounds);
         }
     }
 

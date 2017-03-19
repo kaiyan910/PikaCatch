@@ -15,8 +15,6 @@ import android.os.IBinder;
 import android.os.Vibrator;
 import android.support.annotation.Nullable;
 import android.support.v4.app.NotificationCompat;
-import android.util.Log;
-import android.widget.Toast;
 
 import com.crookk.pikaplus.Constant;
 import com.crookk.pikaplus.Pika;
@@ -57,7 +55,7 @@ public class BackgroundService extends Service {
     DatabaseManager mDatabaseManager;
 
     @Bean
-    MapService mMapService;
+    RestMapService mMapService;
 
     @SystemService
     Vibrator mVibrator;
@@ -119,7 +117,7 @@ public class BackgroundService extends Service {
 
             if (hasNetwork()) {
 
-                SpawnResultWrapper result = mMapService.getRawData(mLastRequestTime);
+                SpawnResultWrapper result = mMapService.getRawData(mLastRequestTime, null);
                 mLastRequestTime = result.getTime();
                 mPreference.edit().lastRequestTime().put(result.getTime()).apply();
 

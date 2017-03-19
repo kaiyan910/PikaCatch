@@ -4,20 +4,22 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.net.Uri;
 
-import com.crookk.pikaplus.Constant;
-import com.crookk.pikaplus.Preference;
 import com.crookk.pikaplus.Preference_;
 import com.crookk.pikaplus.core.presenter.BasePresenter;
 import com.crookk.pikaplus.core.utils.LogUtils;
 import com.crookk.pikaplus.local.bean.DatabaseManager;
 import com.crookk.pikaplus.local.bean.FileManager;
+import com.crookk.pikaplus.local.bean.BasicPokemonManager;
+import com.crookk.pikaplus.local.bean.MockPokemonManager;
 import com.crookk.pikaplus.local.bean.PokemonManager;
 import com.crookk.pikaplus.local.model.api.SpawnResultWrapper;
 import com.crookk.pikaplus.local.model.db.Pokemon;
 import com.crookk.pikaplus.local.model.db.Spawn;
 import com.crookk.pikaplus.module.map.model.PokemonMarker;
 import com.crookk.pikaplus.module.map.service.MapService;
+import com.crookk.pikaplus.module.map.service.MockMapService;
 import com.crookk.pikaplus.module.map.ui.view.MapView;
+import com.google.android.gms.maps.model.LatLngBounds;
 
 import org.androidannotations.annotations.AfterInject;
 import org.androidannotations.annotations.Background;
@@ -33,11 +35,11 @@ import java.util.List;
 @EBean
 public class MapPresenter implements BasePresenter<MapView> {
 
-    @Bean
+    @Bean(MockMapService.class)
     MapService mMapService;
     @Bean
     DatabaseManager mDatabaseManager;
-    @Bean
+    @Bean(MockPokemonManager.class)
     PokemonManager mPokemonManager;
     @Bean
     FileManager mFileManager;
@@ -62,11 +64,11 @@ public class MapPresenter implements BasePresenter<MapView> {
     }
 
     @Background
-    public void fetchPokemonFromServer() {
+    public void fetchPokemonFromServer(LatLngBounds bounds) {
 
         if (mView == null) throw new RuntimeException("no view is attached to MapPresenter");
 
-        SpawnResultWrapper result = mMapService.getRawData(mLastRequestTime);
+        SpawnResultWrapper result = mMapService.getRawData(mLastRequestTime, bounds);
 
         if (result != null) {
 
