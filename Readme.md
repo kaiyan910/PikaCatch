@@ -12,3 +12,7 @@ It provide function like:
 
 *This project will not be updated any more, but there is mock class for demo purpose.*
 
+![Basic](https://github.com/kaiyan910/PikaPlus/blob/master/screenshot/screen_basic.png)
+![IV](https://github.com/kaiyan910/PikaPlus/blob/master/screenshot/screen_iv.png)
+![Filter](https://github.com/kaiyan910/PikaPlus/blob/master/screenshot/screen_filter.png)
+![Menu](https://github.com/kaiyan910/PikaPlus/blob/master/screenshot/screen_menu.png)
